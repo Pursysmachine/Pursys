@@ -3959,5 +3959,44 @@ info@pursysmachine.com </p>
 </div>
 </div>
 <a class="wa-fab" href="https://wa.me/8617729753706?text=Hello%20PURSYS%2C%20I%20would%20like%20to%20inquire%20about%20your%20products." target="_blank" rel="noopener" title="Contact us on WhatsApp" aria-label="Contact us on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.002 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.6 4.46 1.74 6.4L3.2 28.8l6.52-1.7a12.74 12.74 0 0 0 6.28 1.6h.002c7.06 0 12.8-5.74 12.8-12.8 0-7.06-5.74-12.8-12.8-12.8zm0 23.2c-1.98 0-3.92-.53-5.6-1.53l-.4-.24-3.86 1.01 1.03-3.77-.26-.41a10.7 10.7 0 0 1-1.64-5.66c0-5.94 4.84-10.78 10.78-10.78 2.88 0 5.59 1.12 7.62 3.16a10.7 10.7 0 0 1 3.16 7.62c0 5.94-4.84 10.78-10.78 10.78zm5.9-8.02c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.22.32-.84 1.05-1.03 1.26-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.56.16-.19.22-.32.32-.54.11-.22.05-.4-.03-.56-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.55-.73-.56h-.62c-.22 0-.56.08-.86.4-.3.32-1.14 1.14-1.14 2.77 0 1.63 1.19 3.21 1.36 3.43.17.22 2.36 3.6 5.72 5.05.8.34 1.42.55 1.9.7.8.25 1.52.22 2.1.13.64-.1 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.14-.3-.22-.62-.38z"/></svg><span class="wa-label">Contact Us</span></a>
+
+<!-- PURSYS Inquiry FAB + Modal (self-hosted, posts to the same Apps Script Web App as the contact form) -->
+<button type="button" class="inquiry-fab" onclick="openInquiryModal()" aria-label="Request a quote" title="Request a quote">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM7 12h10v1.5H7V12zm0 3h10v1.5H7V15zm0-6h4v1.5H7V9z"/></svg>
+  <span class="inquiry-label">Get a Quote</span>
+</button>
+<div id="inquiryModal" class="inquiry-modal" aria-hidden="true">
+  <div class="inquiry-modal-overlay" onclick="closeInquiryModal()"></div>
+  <div class="inquiry-modal-box" role="dialog" aria-modal="true" aria-label="Request a quote">
+    <button type="button" class="inquiry-modal-close" onclick="closeInquiryModal()" aria-label="Close">&times;</button>
+    <div id="inquiryModalBody">
+      <h3 class="inquiry-modal-title">Request a Quote</h3>
+      <p class="inquiry-modal-sub">Tell us your material &amp; capacity &mdash; our engineer replies within 24 hours.</p>
+      <form id="inquiryFabForm" method="POST" action="https://script.google.com/macros/s/REPLACE_WITH_YOUR_APPS_SCRIPT_URL/exec">
+        <div class="inquiry-field"><label>Name <span class="req">*</span></label><input name="name" placeholder="Your name" required></div>
+        <div class="inquiry-field"><label>Company Name</label><input name="company" placeholder="Company name"></div>
+        <div class="inquiry-field"><label>Country <span class="req">*</span></label><input name="country" placeholder="Country" required></div>
+        <div class="inquiry-field"><label>Email <span class="req">*</span></label><input name="email" type="email" placeholder="you@company.com" required></div>
+        <div class="inquiry-field"><label>WhatsApp</label><input name="whats_app" placeholder="WhatsApp number"></div>
+        <div class="inquiry-field"><label>Material To Process</label><input name="mobile" placeholder="e.g. Chili, Herbal, Chemical Powder, Grain"></div>
+        <div class="inquiry-field"><label>Required Capacity</label><input name="phone" placeholder="e.g. 50kg/h, 100kg/h, 500kg/h"></div>
+        <div class="inquiry-field"><label>Message <span class="req">*</span></label><textarea name="content" placeholder="Tell us your material, capacity and processing requirements" required></textarea></div>
+        <button type="button" id="inquiryFabSubmit" class="inquiry-submit-btn" onclick="submitInquiryFab()">Send Inquiry</button>
+      </form>
+    </div>
+    <div id="inquiryModalThanks" class="inquiry-thanks" style="display:none;">
+      <div class="inquiry-thanks-icon">&#10003;</div>
+      <h3>Thank you!</h3>
+      <p>Your inquiry has been sent. We'll get back to you shortly.</p>
+    </div>
+  </div>
+</div>
+<script>
+function openInquiryModal(){var m=document.getElementById('inquiryModal');if(!m)return;m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+function closeInquiryModal(){var m=document.getElementById('inquiryModal');if(!m)return;m.classList.remove('open');m.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+function submitInquiryFab(){var f=document.getElementById('inquiryModalThanks');var t=document.getElementById('inquiryModalBody');var b=document.getElementById('inquiryFabSubmit');var form=document.getElementById('inquiryFabForm');if(!form)return;var a=form.getAttribute('action')||'';if(a.indexOf('REPLACE_WITH_YOUR_APPS_SCRIPT_URL')!==-1){alert('Inquiry form is not configured yet. Paste your Google Apps Script Web App URL into the form action (see DEPLOY.md).');return;}if(!form.reportValidity()){return;}b.disabled=true;b.textContent='Sending...';fetch(a,{method:'POST',body:new URLSearchParams(new FormData(form)),mode:'no-cors'}).then(function(){}).catch(function(){}).finally(function(){if(t)t.style.display='none';if(f)f.style.display='block';b.disabled=false;b.textContent='Send Inquiry';setTimeout(closeInquiryModal,2600);setTimeout(function(){if(t)t.style.display='block';if(f)f.style.display='none';form.reset();},2700);});}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInquiryModal();});
+</script>
+
 </body>
 </html>
