@@ -711,7 +711,7 @@ Contact Us </a>
 </div>
 </div><div class="c-view c-col self  id_1_3_0_1       " name="列">
 <div class="self   id_1_3_0_1_0     ">
-<form id="form" class="inquiry_form formBox" method="POST" action="https://script.google.com/macros/s/AKfycbz9R_mhVBISqP19aGlxdnjscvxA_qLnvLve49vELjoDEQwPH7QHeym6281qxNpQlRTB/exec" target="_blank" rel="noopener">
+<form id="form" class="inquiry_form formBox" method="POST" action="https://script.google.com/macros/s/AKfycbz9R_mhVBISqP19aGlxdnjscvxA_qLnvLve49vELjoDEQwPH7QHeym6281qxNpQlRTB/exec" rel="noopener">
 <div class="formStyle publicStyle" style="">
 <label class="labelStyle labelWidth">
 <span class="required">*</span>
@@ -766,8 +766,13 @@ Submit
 <!-- PURSYS self-hosted inquiry submit (replaces platform JS). See DEPLOY.md -->
 <button type="submit" id="pursysRealSubmit" style="position:absolute;left:-9999px;width:1px;height:1px;padding:0;margin:0;border:0;opacity:0" aria-hidden="true" tabindex="-1"></button>
 <script>
-function submitInquiry(){var f=document.getElementById('form');var a=f.getAttribute('action')||'';if(a.indexOf('REPLACE_WITH_YOUR_APPS_SCRIPT_URL')!==-1){alert('Contact form is not configured yet. Paste your Google Apps Script Web App URL into the form action (see DEPLOY.md).');return;}if(!f.reportValidity()){return;}f.requestSubmit(document.getElementById('pursysRealSubmit'));}
+function submitInquiry(){var f=document.getElementById('form');var a=f.getAttribute('action')||'';if(a.indexOf('REPLACE_WITH_YOUR_APPS_SCRIPT_URL')!==-1){alert('Contact form is not configured yet. Paste your Google Apps Script Web App URL into the form action (see DEPLOY.md).');return;}if(!f.reportValidity()){return;}var b=f.querySelector('.submitButton');var t=document.getElementById('contactFormThanks');if(b){b.textContent='Sending...';b.style.pointerEvents='none';b.style.opacity='0.7';}var _d=false;function _ok(){if(_d)return;_d=true;f.style.display='none';if(t)t.style.display='block';if(b){b.textContent='Submit';b.style.pointerEvents='';b.style.opacity='';}setTimeout(function(){f.reset();f.style.display='';if(t)t.style.display='none';},5000);}var _tm=setTimeout(_ok,9000);fetch(a,{method:'POST',body:new URLSearchParams(new FormData(f)),mode:'no-cors'}).then(function(){clearTimeout(_tm);_ok();}).catch(function(){clearTimeout(_tm);_ok();});}
 </script>
+<div id="contactFormThanks" class="inquiry-thanks" style="display:none;">
+  <div class="inquiry-thanks-icon">&#10003;</div>
+  <h3>Thank you!</h3>
+  <p>Your inquiry has been sent. We'll get back to you shortly.</p>
+</div>
 </form>
 </div>
 </div>
