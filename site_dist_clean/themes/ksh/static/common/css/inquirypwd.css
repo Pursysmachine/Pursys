@@ -1,0 +1,215 @@
+.hide-pwd * {
+    box-sizing: border-box;
+}
+
+.download .hide-pwd {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /*z-index: 10;*/
+    display: none;
+    z-index: 9999;
+}
+
+.download .hide-pwd form {
+    width: 585px;
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 111;
+    padding: 40px 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.download .hide-pwd form .close {
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    color: #FFFFFF;
+    background: #333333;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    right: -14px;
+    top: -14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mgb20 {
+    margin-bottom: 20px
+}
+
+.download .hide-pwd form .form-title {
+    text-align: center;
+}
+
+
+.download .hide-pwd form .form-title p {
+    font-weight: bold;
+    color: #FF5800;
+    background: #FF5800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.download .hide-pwd form .form-title p:nth-of-type(2) {
+    width: 60px;
+    height: 2px;
+    margin: 10px auto;
+    margin-bottom: 40px;
+    background:#FF5800;
+}
+
+.download .hide-pwd form .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.download .hide-pwd form .item p {
+    width: 100%;
+}
+
+.download .hide-pwd form .item p input {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    border: 1px solid #e1e1e1;
+    background-color: #FFFFFF;
+    font-size: 16px
+}
+
+.download .hide-pwd form .item .pwd-email {
+    width: 60%;
+    overflow: hidden
+}
+
+.download .hide-pwd form .item .pwd-get {
+    font-size: 16px;
+    width: 40%;
+    box-sizing: border-box;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 50px;
+    background: #FF5800;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.download .hide-pwd form .item .pwd-get.no {
+    cursor: no-drop;
+    caret-color: #FF5800;
+    opacity: 0.8;
+}
+
+.download .hide-pwd form .pwd-sub {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #FF5800;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none
+}
+
+@media screen and (max-width: 1400px) {
+    .download .hide-pwd form {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+}
+
+
+@media screen and (max-width: 567px) {
+    .mgb20 {
+        margin-bottom: 10px
+    }
+
+    .download .hide-pwd form {
+        width: 400px;
+    }
+
+    .download .hide-pwd form .input .check-input {
+        height: 35px;
+    }
+
+    .download .hide-pwd form .captcha img {
+        height: 35px;
+    }
+
+    .download .hide-pwd form input[type="button"] {
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .download .hide-pwd form .item .pwd-get {
+        height: 35px;
+        line-height: 35px;
+        white-space: nowrap;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .download .hide-pwd form .item .pwd-email {
+        width: 100%;
+        padding-left: 0px;
+        float: none;
+    }
+
+    .download .hide-pwd form .close {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        right: -17px;
+        top: -17px;
+        font-size: 14px;
+    }
+
+    .download .hide-pwd form .ajax-form-commit {
+        line-height: 35px;
+        height: 35px;
+    }
+
+    .download .hide-pwd form .item {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .download .hide-pwd form .pwd-sub {
+        margin-top: 10px !important;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .download .hide-pwd form {
+        width: 320px;
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .download .hide-pwd form {
+        width: 290px;
+    }
+}

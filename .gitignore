@@ -1,0 +1,37 @@
+# ===== 不部署 / 本地整理用，忽略 =====
+# 本地工作副本（含历史备份子目录，体积大）
+/site/
+
+# 所有以 _ 开头的备份/辅助目录（_bak_*、_email_bak_*、_addr_kw_bak_* 等）
+/_*/
+
+# 任何含 bak 的目录与文件
+/**/*bak*/
+*.bak*
+
+# Python 辅助脚本与缓存（不随站部署）
+*.py
+*.pyc
+__pycache__/
+
+# 系统/临时
+.DS_Store
+*.log
+node_modules/
+
+# 项目级会话数据（不应进部署仓库）
+.workbuddy/
+
+# 工作素材 / 数据 / 打包文件（非站点资源）
+generated-images/
+faq_data.json
+*.zip
+
+# ===== 必须跟踪的部署源与配置（负向保留）=====
+!.gitignore
+!.github/
+!firebase.json
+!.firebaserc
+!DEPLOY.md
+!site_dist_clean/
+!deploy/

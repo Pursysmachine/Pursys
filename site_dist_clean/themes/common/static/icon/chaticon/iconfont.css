@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2202657 */
+  src: url('iconfont.woff2?t=1772789994030') format('woff2'),
+       url('iconfont.woff?t=1772789994030') format('woff'),
+       url('iconfont.ttf?t=1772789994030') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icontelegram:before {
+  content: "\e421";
+}
+
+.icona-telegram1:before {
+  content: "\e420";
+}
+
+.icona-telegram2:before {
+  content: "\e41f";
+}
+
+.icontelegram-plane:before {
+  content: "\e41e";
+}
+
+.iconxiazai-wenjianxiazai:before {
+  content: "\e41d";
+}
+
+.iconxiazaiwenjian:before {
+  content: "\e41c";
+}
+
+.icontiaozhuan:before {
+  content: "\e41b";
+}
+
+.iconyoushangjiantou:before {
+  content: "\e41a";
+}
+
+.iconfolder-download-line:before {
+  content: "\e419";
+}
+
+.iconxiazaiwenjianjia-mian:before {
+  content: "\e418";
+}
+
+.iconliuchengjiantouzuo:before {
+  content: "\e417";
+}
+
+.iconwenjian:before {
+  content: "\e416";
+}
+
+.iconliuchengjiantouxia:before {
+  content: "\e415";
+}
+
+.iconfolder-download-fill:before {
+  content: "\e414";
+}
+
+.iconliuchengjiantou:before {
+  content: "\e413";
+}
+
+.iconicon-kfckfc:before {
+  content: "\e412";
+}
+
+.iconicon-twitternew2:before {
+  content: "\e411";
+}
+
+.iconicon-twitternew:before {
+  content: "\e410";
+}
+
+.icona-icon-kfckfc2:before {
+  content: "\e40f";
+}
+
+.iconlajixiang:before {
+  content: "\e40e";
+}
+
+.icona-iconfont-arrowdown3:before {
+  content: "\e40d";
+}
+
+.icona-iconfont-arrowdown1:before {
+  content: "\e40c";
+}
+
+.iconiconfont-arrowdown:before {
+  content: "\e40b";
+}
+
+.icona-iconfont-arrowdown2:before {
+  content: "\e40a";
+}
+
+.icona-douyin2:before {
+  content: "\e409";
+}
+
+.icondouyin:before {
+  content: "\e408";
+}
+
+.iconb2b-close:before {
+  content: "\e407";
+}
+
+.iconlogo-whatsapp:before {
+  content: "\e406";
+}
+
+.iconwhatsapp:before {
+  content: "\e405";
+}
+
+.iconyoutube-fill:before {
+  content: "\e404";
+}
+
+.iconup_s:before {
+  content: "\e403";
+}
+
+.icona-dianhua1:before {
+  content: "\e402";
+}
+
+.icondianhua:before {
+  content: "\e401";
+}
+
+.iconinstagram:before {
+  content: "\e400";
+}
+

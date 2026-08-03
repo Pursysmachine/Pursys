@@ -1,0 +1,18 @@
+html {font-size: 62.5%;height: 100%}
+body {margin: 0 auto; font-family: Roboto-Regular, Arial, Helvetica, sans-serif; font-size: 12px;font-size: 1.2rem;height: 100%;background: #fff;width:100%;margin:0 auto; overflow-x:hidden}
+img {border: none;}
+ul li {list-style-type: none;}
+ul, form, p, a, img, table, tr, td, li, dd, dt, dl, span {margin: 0;padding: 0;list-style: none;}
+img{ max-width: 100%;}
+a {text-decoration: none;color: #333;outline: none;transition: 0.5s;-moz-transition: 0.5s;-o-transition: 0.5s;-webkit-transition: 0.5s;}
+
+h1,h2 {margin: 0;padding: 0;font-weight: normal;color: inherit;}
+.clear {clear: both;}
+.maln {margin-left: auto !important}
+input, textarea, select {font-family: Roboto-Regular, Arial, Helvetica, sans-serif; font-size: 12px;color:#999999;border: none;outline: none;}
+input, textarea { border: none; background: none; }
+input[type="submit"], textarea[type="submit"] { cursor: pointer; }
+input[type="checkbox"], textarea[type="checkbox"] { cursor: pointer; }
+input[type="radio"], textarea[type="radio"] { cursor: pointer; }
+input:focus, textarea:focus { outline: none; }
+

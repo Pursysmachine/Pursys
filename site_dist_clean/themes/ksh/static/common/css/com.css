@@ -1,0 +1,144 @@
+.product_detailWrap .product-detail-content,
+.news_detailWrap .news-detail-content,
+.case_detailWrap .case-detail-content,
+.commonIframe,
+.expand_collapse_textWrap .expand-collapse-desc,
+.prodetails-desc {
+    position: relative;
+    padding-top: 24px;
+    font-size: 16px;
+    color: #666666;
+    line-height: 30px;
+    width: 100%;
+    /*overflow: auto;*/
+    overflow: visible;
+}
+
+.product_detailWrap .product-detail-content a,
+.news_detailWrap .news-detail-content a,
+.case_detailWrap .case-detail-content a,
+.commonIframe a,
+.expand_collapse_textWrap .expand-collapse-desc a,
+.prodetails-desc a {
+    display: inline;
+    color: #FFB500;
+}
+
+.product_detailWrap .product-detail-content a:hover,
+.news_detailWrap .news-detail-content a:hover,
+.case_detailWrap .case-detail-content a:hover,
+.commonIframe a:hover,
+.expand_collapse_textWrap .expand-collapse-desc a:hover,
+.prodetails-desc a:hover {
+    color: #666666;
+}
+
+.product_detailWrap .product-detail-content img,
+.news_detailWrap .news-detail-content img,
+.case_detailWrap .case-detail-content img,
+.commonIframe img,
+.expand_collapse_textWrap .expand-collapse-desc img,
+.prodetails-desc img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product_detailWrap .product-detail-content > p, .product_detailWrap .product-detail-content > span, .product_detailWrap .product-detail-content > li, .product_detailWrap .product-detail-content > strong,
+.news_detailWrap .news-detail-content > p,
+.news_detailWrap .news-detail-content > span,
+.news_detailWrap .news-detail-content > li,
+.news_detailWrap .news-detail-content > strong,
+.case_detailWrap .case-detail-content > p,
+.case_detailWrap .case-detail-content > span,
+.case_detailWrap .case-detail-content > li,
+.case_detailWrap .case-detail-content > strong,
+.commonIframe > p,
+.commonIframe > span,
+.commonIframe > li,
+.commonIframe > strong,
+.expand_collapse_textWrap .expand-collapse-desc > p,
+.expand_collapse_textWrap .expand-collapse-desc > span,
+.expand_collapse_textWrap .expand-collapse-desc > li,
+.expand_collapse_textWrap .expand-collapse-desc > strong,
+.prodetails-desc > p,
+.prodetails-desc > span,
+.prodetails-desc > li,
+.prodetails-desc > strong {
+    color: #666666;
+}
+
+.product_detailWrap .product-detail-content h1,
+.news_detailWrap .news-detail-content h1,
+.case_detailWrap .case-detail-content h1,
+.commonIframe h1,
+.expand_collapse_textWrap .expand-collapse-desc h1,
+.prodetails-desc h1 {
+    line-height: 1.1;
+}
+
+.product_detailWrap .product-detail-content h2,
+.news_detailWrap .news-detail-content h2,
+.case_detailWrap .case-detail-content h2,
+.commonIframe h2,
+.expand_collapse_textWrap .expand-collapse-desc h2,
+.prodetails-desc h2 {
+    line-height: 1.2;
+}
+
+.product_detailWrap .product-detail-content h3,
+.news_detailWrap .news-detail-content h3,
+.case_detailWrap .case-detail-content h3,
+.commonIframe h3,
+.expand_collapse_textWrap .expand-collapse-desc h3,
+.prodetails-desc h3 {
+    line-height: 1.3;
+}
+
+.product_detailWrap .product-detail-content ul,
+.news_detailWrap .news-detail-content ul,
+.case_detailWrap .case-detail-content ul,
+.commonIframe ul,
+.expand_collapse_textWrap .expand-collapse-desc ul,
+.prodetails-desc ul {
+    list-style: auto;
+}
+
+.product_detailWrap .product-detail-content ul li,
+.news_detailWrap .news-detail-content ul li,
+.case_detailWrap .case-detail-content ul li,
+.commonIframe ul li,
+.expand_collapse_textWrap .expand-collapse-desc ul li,
+.prodetails-desc ul li {
+    list-style-type: disc;
+}
+
+.product_detailWrap .product-detail-content ol li,
+.news_detailWrap .news-detail-content ol li,
+.case_detailWrap .case-detail-content ol li,
+.commonIframe ol li,
+.expand_collapse_textWrap .expand-collapse-desc ol li,
+.prodetails-desc ol li {
+    list-style-type: decimal;
+}
+
+.product_detailWrap .product-detail-content table,
+.news_detailWrap .news-detail-content table,
+.case_detailWrap .case-detail-content table,
+.commonIframe table,
+.expand_collapse_textWrap .expand-collapse-desc table,
+.prodetails-desc table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    line-height: 24px;
+}
+
+.product_detailWrap .product-detail-content table tr td,
+.news_detailWrap .news-detail-content table tr td,
+.case_detailWrap .case-detail-content table tr td,
+.commonIframe table tr td,
+.expand_collapse_textWrap .expand-collapse-desc table tr td,
+.prodetails-desc table tr td {
+    padding: 5px;
+    border: 1px solid #eaeaea;
+}

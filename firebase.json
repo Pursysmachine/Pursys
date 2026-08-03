@@ -1,0 +1,38 @@
+{
+  "hosting": {
+    "public": "site_dist_clean",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/__pycache__",
+      "**/node_modules",
+      "**/*_img_bak_*",
+      "**/*.bak*",
+      "**/_bak_*",
+      "**/_site_backup_*",
+      "**/_product_template.html",
+      "**/_chili-powder-mill_img_bak_*",
+      "**/_spice-hammer-mill_img_bak_*"
+    ],
+    "headers": [
+      {
+        "source": "/assets/**",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400" }
+        ]
+      },
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=3600" }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=300" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,512 @@
+@font-face {
+  font-family: "iconfont2bksh"; /* Project id 4667299 */
+  src: url('iconfont.woff2?t=1727659229953') format('woff2'),
+       url('iconfont.woff?t=1727659229953') format('woff'),
+       url('iconfont.ttf?t=1727659229953') format('truetype');
+  font-display: optional;
+}
+
+.iconfont2bksh {
+  font-family: "iconfont2bksh" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon2bksh-tuite-quan:before {
+  content: "\e668";
+}
+
+.icon2bksh-Tiktok-quan:before {
+  content: "\e667";
+}
+
+.icon2bksh-YouTube-quan:before {
+  content: "\e676";
+}
+
+.icon2bksh-Facebook-quan:before {
+  content: "\e67e";
+}
+
+.icon2bksh-Instagram-quan:before {
+  content: "\e67d";
+}
+
+.icon2bksh-Linkedin-quan:before {
+  content: "\e67c";
+}
+
+.icon2bksh-Pinterest-quan:before {
+  content: "\e678";
+}
+
+.icon2bksh-VK-quan:before {
+  content: "\e677";
+}
+
+.icon2bksh-biaoqian:before {
+  content: "\e649";
+}
+
+.icon2bksh-twitter3:before {
+  content: "\e7fd";
+}
+
+.icon2bksh-twitter4:before {
+  content: "\e7fe";
+}
+
+.icon2bksh-twitter-new2:before {
+  content: "\e800";
+}
+
+.icon2bksh-twitter-new:before {
+  content: "\e7ff";
+}
+
+.icon2bksh-tiktok:before {
+  content: "\e8db";
+}
+
+.icon2bksh-delete:before {
+  content: "\e69d";
+}
+
+.icon2bksh-chahao:before {
+  content: "\e617";
+}
+
+.icon2bksh-earth:before {
+  content: "\e6d5";
+}
+
+.icon2bksh-earth1:before {
+  content: "\e781";
+}
+
+.icon2bksh-chahao1:before {
+  content: "\e60e";
+}
+
+.icon2bksh-phone-Fill:before {
+  content: "\e601";
+}
+
+.icon2bksh-tik_tok:before {
+  content: "\e603";
+}
+
+.icon2bksh-dianhua:before {
+  content: "\e604";
+}
+
+.icon2bksh-b2b-close:before {
+  content: "\e605";
+}
+
+.icon2bksh-a-rightlinefill-line:before {
+  content: "\e606";
+}
+
+.icon2bksh-daohang:before {
+  content: "\e609";
+}
+
+.icon2bksh-send-plane-line:before {
+  content: "\e60a";
+}
+
+.icon2bksh-lianjie:before {
+  content: "\e60b";
+}
+
+.icon2bksh-upload-cloud-2-line:before {
+  content: "\e60c";
+}
+
+.icon2bksh-a-lianjie1:before {
+  content: "\e60d";
+}
+
+.icon2bksh-a-weibo1:before {
+  content: "\e612";
+}
+
+.icon2bksh-duoqiyingxiang:before {
+  content: "\e613";
+}
+
+.icon2bksh-yuyan:before {
+  content: "\e614";
+}
+
+.icon2bksh-weibo:before {
+  content: "\e615";
+}
+
+.icon2bksh-jiantou_youshang:before {
+  content: "\e618";
+}
+
+.icon2bksh-a-xiazai1:before {
+  content: "\e619";
+}
+
+.icon2bksh-xiazai:before {
+  content: "\e61a";
+}
+
+.icon2bksh-changjiantou:before {
+  content: "\e61b";
+}
+
+.icon2bksh-a-danjiantouchangjiantouyou:before {
+  content: "\e61c";
+}
+
+.icon2bksh-a-danjiantouchangjiantouzuo:before {
+  content: "\e61d";
+}
+
+.icon2bksh-a-youxiang1:before {
+  content: "\e61e";
+}
+
+.icon2bksh-yunxiazai_o:before {
+  content: "\e61f";
+}
+
+.icon2bksh-dianhua1:before {
+  content: "\e621";
+}
+
+.icon2bksh-rili:before {
+  content: "\e622";
+}
+
+.icon2bksh-a-dianhua1:before {
+  content: "\e623";
+}
+
+.icon2bksh-notepad:before {
+  content: "\e625";
+}
+
+.icon2bksh-jiantou_youxia:before {
+  content: "\e626";
+}
+
+.icon2bksh-a-dianhua11:before {
+  content: "\e627";
+}
+
+.icon2bksh-a-youtube1:before {
+  content: "\e628";
+}
+
+.icon2bksh-a-youjianyouxiang_jurassic:before {
+  content: "\e629";
+}
+
+.icon2bksh-a-fenlei1:before {
+  content: "\e62a";
+}
+
+.icon2bksh-fenlei:before {
+  content: "\e62b";
+}
+
+.icon2bksh-sanjiaoshang:before {
+  content: "\e62c";
+}
+
+.icon2bksh-xiangshang:before {
+  content: "\e62d";
+}
+
+.icon2bksh-xiangxia:before {
+  content: "\e62e";
+}
+
+.icon2bksh-sanjiao-jinru:before {
+  content: "\e62f";
+}
+
+.icon2bksh-xiangzuo:before {
+  content: "\e630";
+}
+
+.icon2bksh-lianjielink:before {
+  content: "\e631";
+}
+
+.icon2bksh-xiajiantou:before {
+  content: "\e632";
+}
+
+.icon2bksh-sanjiaoxing:before {
+  content: "\e633";
+}
+
+.icon2bksh-xiazai1:before {
+  content: "\e634";
+}
+
+.icon2bksh-xiazai2:before {
+  content: "\e635";
+}
+
+.icon2bksh-jiantou_qiehuanyou:before {
+  content: "\e636";
+}
+
+.icon2bksh-jiantou_qiehuanzuo:before {
+  content: "\e638";
+}
+
+.icon2bksh-a-xiazai11:before {
+  content: "\e639";
+}
+
+.icon2bksh-a-xiazai4:before {
+  content: "\e63a";
+}
+
+.icon2bksh-home:before {
+  content: "\e624";
+}
+
+.icon2bksh-edit:before {
+  content: "\e611";
+}
+
+.icon2bksh-facebook:before {
+  content: "\e620";
+}
+
+.icon2bksh-pinterest:before {
+  content: "\e8ab";
+}
+
+.icon2bksh-linkedin:before {
+  content: "\e648";
+}
+
+.icon2bksh-youtube:before {
+  content: "\e6d6";
+}
+
+.icon2bksh-twitter:before {
+  content: "\e607";
+}
+
+.icon2bksh-bigger:before {
+  content: "\e647";
+}
+
+.icon2bksh-left:before {
+  content: "\e72c";
+}
+
+.icon2bksh-right:before {
+  content: "\e72d";
+}
+
+.icon2bksh-up1:before {
+  content: "\e72e";
+}
+
+.icon2bksh-bottom1:before {
+  content: "\e72f";
+}
+
+.icon2bksh-left1:before {
+  content: "\e730";
+}
+
+.icon2bksh-right1:before {
+  content: "\e731";
+}
+
+.icon2bksh-up:before {
+  content: "\e73e";
+}
+
+.icon2bksh-bottom:before {
+  content: "\e73f";
+}
+
+.icon2bksh-instagram:before {
+  content: "\e79d";
+}
+
+.icon2bksh-tumblr:before {
+  content: "\e79e";
+}
+
+.icon2bksh-download:before {
+  content: "\e7a0";
+}
+
+.icon2bksh-download1:before {
+  content: "\e7a7";
+}
+
+.icon2bksh-search4:before {
+  content: "\e7b2";
+}
+
+.icon2bksh-address:before {
+  content: "\e7bc";
+}
+
+.icon2bksh-email:before {
+  content: "\e7bd";
+}
+
+.icon2bksh-contact:before {
+  content: "\e7be";
+}
+
+.icon2bksh-whatsapp:before {
+  content: "\e7bf";
+}
+
+.icon2bksh-fax:before {
+  content: "\e7c2";
+}
+
+.icon2bksh-mobile:before {
+  content: "\e7c6";
+}
+
+.icon2bksh-phone:before {
+  content: "\e7c8";
+}
+
+.icon2bksh-tel:before {
+  content: "\e7c7";
+}
+
+.icon2bksh-phone1:before {
+  content: "\e7cb";
+}
+
+.icon2bksh-skype:before {
+  content: "\e7cc";
+}
+
+.icon2bksh-whatsapp1:before {
+  content: "\e7c1";
+}
+
+.icon2bksh-address1:before {
+  content: "\e7c3";
+}
+
+.icon2bksh-contact1:before {
+  content: "\e7c4";
+}
+
+.icon2bksh-email1:before {
+  content: "\e7c5";
+}
+
+.icon2bksh-skype1:before {
+  content: "\e7c9";
+}
+
+.icon2bksh-fax1:before {
+  content: "\e7ca";
+}
+
+.icon2bksh-qq:before {
+  content: "\e7ce";
+}
+
+.icon2bksh-tel1:before {
+  content: "\e7cd";
+}
+
+.icon2bksh-wechat:before {
+  content: "\e7cf";
+}
+
+.icon2bksh-phone2:before {
+  content: "\e7d0";
+}
+
+.icon2bksh-message:before {
+  content: "\e7da";
+}
+
+.icon2bksh-calendar:before {
+  content: "\e7e1";
+}
+
+.icon2bksh-calendar1:before {
+  content: "\e7e3";
+}
+
+.icon2bksh-top:before {
+  content: "\e7ed";
+}
+
+.icon2bksh-youbian:before {
+  content: "\e60f";
+}
+
+.icon2bksh-jian2:before {
+  content: "\e600";
+}
+
+.icon2bksh-jia2:before {
+  content: "\e608";
+}
+
+.icon2bksh-vk:before {
+  content: "\e735";
+}
+
+.icon2bksh-instagram1:before {
+  content: "\e640";
+}
+
+.icon2bksh-up7:before {
+  content: "\e722";
+}
+
+.icon2bksh-bottom7:before {
+  content: "\e723";
+}
+
+.icon2bksh-left7:before {
+  content: "\e724";
+}
+
+.icon2bksh-right7:before {
+  content: "\e725";
+}
+
+.icon2bksh-sousuo4:before {
+  content: "\e610";
+}
+
+.icon2bksh-sousuo:before {
+  content: "\e616";
+}
+
+.icon2bksh-sousuo1:before {
+  content: "\e65b";
+}
+
+.icon2bksh-shangchuan:before {
+  content: "\e602";
+}
+
+.icon2bksh-top2:before {
+  content: "\e637";
+}
+
