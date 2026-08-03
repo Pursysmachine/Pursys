@@ -178,6 +178,36 @@ firebase deploy
 
 > 补充：表单接单 URL（`contact-us.html` 里的 `REPLACE_WITH_YOUR_APPS_SCRIPT_URL`）仍需你按「四」手动填好后再 push；Search Console 的收录验证（「六」）仍需登录 Google 一次（可用合规网络或请伙伴协助）。
 
+### 分工：本机（国内）vs 境外机/伙伴（能连 Google）
+
+本机只上国内网络，Firebase 控制台和 `firebase login:ci` 直连受限；GitHub 国内基本可访问。所以：
+
+**境外机/伙伴（必须能连 Google）只需做两件事：**
+```bash
+# 1) 安装 Firebase CLI（前提：已装 Node）
+npm install -g firebase-tools
+
+# 2) 取部署令牌（引导登录 Google 账号，输出形如 1//04xxxx 的长字符串）
+firebase login:ci
+# ↑ 把输出的整串 token 复制保存
+```
+- 同时在 https://console.firebase.google.com 新建项目（如 `pursys-web`）并开启 **Hosting**（纯网页操作）。
+- 把 **token** 和 **项目 ID（pursys-web）** 发回给你。
+
+**你在本机（国内）做：**
+```bash
+# 1) 到 github.com 新建仓库（公开/私有均可，不要勾选自动生成 README）
+# 2) 关联远程并推送（把下面地址换成你的仓库）
+git remote add origin https://github.com/你的用户名/你的仓库名.git
+git push -u origin main
+# 3) GitHub 仓库 → Settings → Secrets and variables → Actions → 添加两条：
+#    FIREBASE_TOKEN      = 伙伴给的 token
+#    FIREBASE_PROJECT_ID = pursys-web
+```
+推送后 GitHub Actions 自动部署，日志出现 `✔ Deploy complete!` 即上线。
+
+> 若你愿意把 GitHub 仓库的 admin 权限给伙伴，也可由伙伴在境外机 `git clone` 后直接配 secret，你本机只需 push 代码即可。
+
 ---
 
 ## 七、常见问题
