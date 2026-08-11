@@ -639,7 +639,7 @@ Contact Us </a>
 <script src="/themes/common/static/icon/iconfont.js"></script>
 <script src="/themes/common/static/icon/iconfont.js"></script>
 <div class="hide">
-<form action="/index/inquiry/inquirypost/source/4.html" class="ajax-form">
+<form id="catalogInquiryForm" method="POST" action="https://script.google.com/macros/s/AKfycbzRgXx9Pobo-u8Sx_7sY9cB4BEdoPmiTThtliBvXLNXWJ0P_HXDXtD8UfjNHRSosqSi/exec">
 <p class="close icon iconfontggg icon-yf-guanbi" onclick="hideDownloadInquiryPopup(2)"></p>
 <div class="form-title">
 <p class="color-yellow" style="text-align: center;text-transform:capitalize;">leave your message</p>
@@ -647,12 +647,12 @@ Contact Us </a>
 </div>
 <div class="item">
 <p class="input">
-<input type="text" name="name" class="check-input" placeholder="* Name" maxlength="50">
+<input type="text" name="name" class="check-input" placeholder="* Name" maxlength="50" required>
 </p>
 </div>
 <div class="item">
 <p class="input">
-<input type="email" name="email" class="check-input" placeholder="* E-mail" maxlength="50">
+<input type="email" name="email" class="check-input" placeholder="* E-mail" maxlength="50" required>
 </p>
 </div>
 <div class="item">
@@ -662,27 +662,24 @@ Contact Us </a>
 </div>
 <div class="item">
 <p class="input">
-<input type="text" name="country" class="check-input" placeholder="* Country" maxlength="100">
+<input type="text" name="country" class="check-input" placeholder="* Country" maxlength="100" required>
 </p>
 </div>
 <div class="item">
 <p class="input">
-<textarea type="text" name="content" class="check-input" placeholder="* Message"></textarea>
+<textarea type="text" name="content" class="check-input" placeholder="* Message" required></textarea>
 </p>
 </div>
-<div class="captcha item">
-<p class="input fl">
-<input type="text" name="code" class="check-input" placeholder="* CAPTCHA">
-</p>
-<div class="fr">
-<a>
-<img loading="lazy" src="/assets/img/captcha-placeholder.webp" alt="captcha" class="refresh-inquiry-code" onclick="this.src='/assets/img/captcha-placeholder.webp?'+Math.random()" />
-</a>
-</div>
-<div class="clear"></div>
-</div>
-<input type="button" class="ajax-form-commit" value="Submit" onclick="subDownloadInquiry(this)"/>
+<input type="button" class="ajax-form-commit" value="Submit" onclick="submitCatalogInquiry(this)"/>
 </form>
+<div id="catalogInquiryThanks" class="inquiry-thanks" style="display:none;">
+  <div class="inquiry-thanks-icon">&#10003;</div>
+  <h3>Thank you!</h3>
+  <p>Your message has been sent. We'll get back to you shortly.</p>
+</div>
+<script>
+function submitCatalogInquiry(btn){var f=document.getElementById('catalogInquiryForm');if(!f)return;var a=f.getAttribute('action')||'';if(a.indexOf('REPLACE_WITH_YOUR_APPS_SCRIPT_URL')!==-1){alert('Form not configured.');return;}if(!f.reportValidity()){return;}btn.disabled=true;btn.value='Sending...';var _d=false;function _ok(){if(_d)return;_d=true;f.style.display='none';var t=document.getElementById('catalogInquiryThanks');if(t)t.style.display='block';btn.disabled=false;btn.value='Submit';setTimeout(function(){f.style.display='';if(t)t.style.display='none';f.reset();},5000);}var _tm=setTimeout(_ok,9000);fetch(a,{method:'POST',body:new URLSearchParams(new FormData(f)),mode:'no-cors'}).then(function(){clearTimeout(_tm);_ok();}).catch(function(){clearTimeout(_tm);_ok();});}
+</script>
 </div>
 <div class="hide-pwd">
 <form action="/index/inquiry/inquirypwdpost.html" class="ajax-form">
@@ -1858,7 +1855,7 @@ info@pursysmachine.com </p>
     <div id="inquiryModalBody">
       <h3 class="inquiry-modal-title">Request a Quote</h3>
       <p class="inquiry-modal-sub">Tell us your material &amp; capacity &mdash; our engineer replies within 24 hours.</p>
-      <form id="inquiryFabForm" method="POST" action="https://script.google.com/macros/s/AKfycbz9R_mhVBISqP19aGlxdnjscvxA_qLnvLve49vELjoDEQwPH7QHeym6281qxNpQlRTB/exec">
+      <form id="inquiryFabForm" method="POST" action="https://script.google.com/macros/s/AKfycbzRgXx9Pobo-u8Sx_7sY9cB4BEdoPmiTThtliBvXLNXWJ0P_HXDXtD8UfjNHRSosqSi/exec">
         <div class="inquiry-field"><label>Name <span class="req">*</span></label><input name="name" placeholder="Your name" required></div>
         <div class="inquiry-field"><label>Company Name</label><input name="company" placeholder="Company name"></div>
         <div class="inquiry-field"><label>Country <span class="req">*</span></label><input name="country" placeholder="Country" required></div>
