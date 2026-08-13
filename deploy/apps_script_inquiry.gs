@@ -135,3 +135,19 @@ function jsonOut(obj) {
     .createTextOutput(JSON.stringify(obj))
     .setMimeType(ContentService.MimeType.JSON);
 }
+
+// Debug helper: send a test email to EMAIL_TO without a real form submission.
+// Run this from the editor (function dropdown -> testEmail -> Run) to verify
+// that MailApp permission is granted and email delivery works.
+function testEmail() {
+  sendNotification({
+    name: 'Test User',
+    company: 'Test Company',
+    country: 'China',
+    email: 'test@example.com',
+    whats_app: '+8612345678900',
+    mobile: 'chili powder',
+    phone: '100 kg/h',
+    content: 'This is a test inquiry from Apps Script editor.'
+  }, 'https://www.pursysmachine.com/contact-us.html');
+}

@@ -55,6 +55,23 @@
 }
 </script>
 <link rel="stylesheet" href="/assets/css/wa-fab.css">
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '4599478436988363');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=4599478436988363&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body class="noEditorBody page ">
 <div class="c-base self   id_0       " name="头部">
@@ -3807,7 +3824,7 @@ info@pursysmachine.com </p>
 <script>
 function openInquiryModal(){var m=document.getElementById('inquiryModal');if(!m)return;m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
 function closeInquiryModal(){var m=document.getElementById('inquiryModal');if(!m)return;m.classList.remove('open');m.setAttribute('aria-hidden','true');document.body.style.overflow='';}
-function submitInquiryFab(){var f=document.getElementById('inquiryModalThanks');var t=document.getElementById('inquiryModalBody');var b=document.getElementById('inquiryFabSubmit');var form=document.getElementById('inquiryFabForm');if(!form)return;var a=form.getAttribute('action')||'';if(a.indexOf('REPLACE_WITH_YOUR_APPS_SCRIPT_URL')!==-1){alert('Inquiry form is not configured yet. Paste your Google Apps Script Web App URL into the form action (see DEPLOY.md).');return;}if(!form.reportValidity()){return;}b.disabled=true;b.textContent='Sending...';var _d=false;function _ok(){if(_d)return;_d=true;if(t)t.style.display='none';if(f)f.style.display='block';b.disabled=false;b.textContent='Send Inquiry';setTimeout(closeInquiryModal,2600);setTimeout(function(){if(t)t.style.display='block';if(f)f.style.display='none';form.reset();},2700);}var _tm=setTimeout(_ok,9000);fetch(a,{method:'POST',body:new URLSearchParams(new FormData(form)),mode:'no-cors'}).then(function(){clearTimeout(_tm);_ok();}).catch(function(){clearTimeout(_tm);_ok();});}
+function submitInquiryFab(){var f=document.getElementById('inquiryModalThanks');var t=document.getElementById('inquiryModalBody');var b=document.getElementById('inquiryFabSubmit');var form=document.getElementById('inquiryFabForm');if(!form)return;var a=form.getAttribute('action')||'';if(a.indexOf('REPLACE_WITH_YOUR_APPS_SCRIPT_URL')!==-1){alert('Inquiry form is not configured yet. Paste your Google Apps Script Web App URL into the form action (see DEPLOY.md).');return;}if(!form.reportValidity()){return;}b.disabled=true;b.textContent='Sending...';var _d=false;function _ok(){if(_d)return;_d=true;fbq('track','Lead');if(t)t.style.display='none';if(f)f.style.display='block';b.disabled=false;b.textContent='Send Inquiry';setTimeout(closeInquiryModal,2600);setTimeout(function(){if(t)t.style.display='block';if(f)f.style.display='none';form.reset();},2700);}var _tm=setTimeout(_ok,9000);fetch(a,{method:'POST',body:new URLSearchParams(new FormData(form)),mode:'no-cors'}).then(function(){clearTimeout(_tm);_ok();}).catch(function(){clearTimeout(_tm);_ok();});}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeInquiryModal();});
 </script>
 
